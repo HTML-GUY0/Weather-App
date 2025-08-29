@@ -63,3 +63,13 @@ icons/ — Folder containing weather icons used in the app.
 # API Used
 
 This app uses the wttr.in API to fetch weather data in JSON format.
+
+# Problems/Glitches
+
+- If you type a random word, it would still show the temperature of it but it wouldn't be a real temperature, it just shows a random temperature.
+
+# Credits
+
+- Icons are taken from **CodingNepal** (Youtube) except the haze.svg.
+
+- Inspiration is also taken from **CodingNepal** (Youtube).
