@@ -25,9 +25,9 @@ A simple and stylish weather app that allows users to:
 
 ---
 
+# Live Preview 
 
-
-
+https://html-guy0.github.io/Weather-App/
 
 ---
 
