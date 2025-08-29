@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="box">
+    <h2>🌡️ Temperature Checker</h2>
+
+    <!-- Search bar -->
+    <div class="search-bar">
+      <input type="text" id="city" placeholder="Enter city name">
+      <button onclick="getTemperature()">Search</button>
+    </div>
+
+    <!-- Loader for searched city -->
+    <div id="searchLoader" class="loading-wave" style="display:none;">
+      <div class="loading-bar"></div>
+      <div class="loading-bar"></div>
+      <div class="loading-bar"></div>
+      <div class="loading-bar"></div>
+    </div>
+
+    <p id="result">—</p>
+    <img id="searchIcon" src="icons/no-result.svg" alt="Weather icon" width="80" style="margin-top:10px; display:none;">
+
+    <hr>
+    <!-- User’s location temp -->
+    <h3>Your Location</h3>
+
+    <!-- Loader for local weather -->
+    <div id="localLoader" class="loading-wave" style="display:none;">
+      <div class="loading-bar"></div>
+      <div class="loading-bar"></div>
+      <div class="loading-bar"></div>
+      <div class="loading-bar"></div>
+    </div>
+
+    <p id="localTemp">Fetching...</p>
+    <img id="localIcon" src="icons/no-result.svg" alt="Weather icon" width="80" style="margin-top:10px; display:none;">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</body>
+</html>
