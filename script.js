@@ -7,8 +7,8 @@ function getIcon(condition) {
     if (condition.includes("mist")) return "icons/mist.svg";
     if (condition.includes("thunder")) return "icons/thunder.svg";
     if (condition.includes("haze")) return "icons/haze.svg";
-    if (condition.includes("overcast")) return "icons/overcast.svg";
     if (condition.includes("sunny")) return "icons/clear.svg";
+    if (condition.includes("overcast")) return "icons/overcast.png";
     return "icons/no-result.svg";
   }
 
