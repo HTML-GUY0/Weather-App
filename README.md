@@ -70,6 +70,6 @@ This app uses the wttr.in API to fetch weather data in JSON format.
 
 # Credits
 
-- Icons are taken from **CodingNepal** (Youtube) except the haze.svg.
+- Icons are taken from **CodingNepal** (Youtube) except haze.svg, overcast.png and shower-in-vicinity.png
 
 - Inspiration is also taken from **CodingNepal** (Youtube).
