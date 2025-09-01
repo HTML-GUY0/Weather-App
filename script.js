@@ -47,8 +47,7 @@ function getIcon(condition) {
           return;
         }
 
-        // Display exactly what the user typed, capitalized properly
-        const formattedCity = city
+         const formattedCity = city
           .split(" ")
           .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
           .join(" ");
