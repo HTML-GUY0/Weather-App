@@ -1,17 +1,22 @@
 function getIcon(condition) {
-    condition = condition.toLowerCase();
-    if (condition.includes("clear")) return "icons/clear.svg";
-    if (condition.includes("cloud")) return "icons/clouds.svg";
-    if (condition.includes("rain")) return "icons/rain.svg";
-    if (condition.includes("snow")) return "icons/snow.svg";
-    if (condition.includes("mist")) return "icons/mist.svg";
-    if (condition.includes("thunder")) return "icons/thunder.svg";
-    if (condition.includes("haze")) return "icons/haze.svg";
-    if (condition.includes("sunny")) return "icons/clear.svg";
-    if (condition.includes("overcast")) return "icons/overcast.png";
-    if (condition.includes("shower in vicinity")) return "icons/shower-in-vicinity.png";
-    return "icons/no-result.svg";
-  }
+  condition = condition.toLowerCase();
+  
+  if (condition.includes("thunder") && condition.includes("rain"))return "icons/thunder_rain.svg";
+  if (condition.includes("thunderstorm") && condition.includes("rain"))return "icons/thunder_rain.svg";
+  if (condition.includes("clear")) return "icons/clear.svg";
+  if (condition.includes("cloud")) return "icons/clouds.svg";
+  if (condition.includes("rain")) return "icons/rain.svg";
+  if (condition.includes("snow")) return "icons/snow.svg";
+  if (condition.includes("mist")) return "icons/mist.svg";
+  if (condition.includes("thunder")) return "icons/thunder.svg";
+  if (condition.includes("haze")) return "icons/haze.svg";
+  if (condition.includes("sunny")) return "icons/clear.svg";
+  if (condition.includes("overcast")) return "icons/overcast.png";
+  if (condition.includes("shower in vicinity")) return "icons/shower-in-vicinity.png";
+  if (condition.includes("fog")) return "icons/fog.png";
+
+  return "icons/no-result.svg";
+}
 
   function getTemperature() {
     const inputField = document.getElementById("city");
@@ -47,7 +52,8 @@ function getIcon(condition) {
           return;
         }
 
-         const formattedCity = city
+        // Display exactly what the user typed, capitalized properly
+        const formattedCity = city
           .split(" ")
           .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
           .join(" ");
