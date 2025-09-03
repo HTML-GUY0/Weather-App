@@ -8,7 +8,7 @@ A simple and stylish weather app that allows users to:
 
 ---
 
-## Features
+## ⭐ Features
 
 - Search for any city and get its temperature and weather description.
 - Automatically shows the user’s local temperature on page load.
@@ -25,13 +25,13 @@ A simple and stylish weather app that allows users to:
 
 ---
 
-# Live Preview 
+# 🔴 Live Preview 
 
 https://html-guy0.github.io/Weather-App/
 
 ---
 
-# How to use
+# ❓How to use❓
 
 1. Type a city name in the search bar and click Search.
 
@@ -46,7 +46,7 @@ https://html-guy0.github.io/Weather-App/
 
 ---
 
-# Files
+# 📑 Files
 
 index.html — The main HTML file.
 
@@ -60,11 +60,11 @@ icons/ — Folder containing weather icons used in the app.
 
 ---
 
-# API Used
+# 💻 API Used
 
 This app uses the wttr.in API to fetch weather data in JSON format.
 
-# Problems/Glitches
+# ❌ Glitches
 
 - If you type a random word, it would still show the temperature of it but it wouldn't be a real temperature, it just shows a random temperature.
 
